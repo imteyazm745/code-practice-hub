@@ -43,3 +43,14 @@ Expected Time Complexity: O(n)
 Expected Space Complexity: O(1)"""
 
 
+# Solution
+def solve(n, arr, x, y):
+    sum_range = 0
+    for i in range(x, y):
+        sum_range += arr[i}
+        
+    count = y - x + 1
+    average = sum_range / count
+    return average
+        
+    # CODE HERE
