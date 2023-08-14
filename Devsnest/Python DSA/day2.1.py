@@ -49,7 +49,7 @@ def solve(n, arr, x, y):
     for i in range(x, y):
         sum_range += arr[i}
         
-    count = arr[y] - arr[x] + 1
+    count = arr[y] - arr[x] + 1 #not getting correct ourput
     average = sum_range / count
     return average
         
