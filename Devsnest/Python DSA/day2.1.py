@@ -43,7 +43,6 @@ Expected Time Complexity: O(n)
 Expected Space Complexity: O(1)"""
 
 
-
 # Solution
 def solve(n, arr, x, y):
     sum_range = 0
