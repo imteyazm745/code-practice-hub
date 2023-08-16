@@ -26,16 +26,22 @@ Expected Space Complexity: O(1) """
 str1 = "arfardarb"
 
 def solve(str1):
-    output = {}
-    #print(len(str1))
-    for i in str1:
-        if i in output:
-            output[i]+= 1
+    # CODE HERE
+    char_freq = {}
+    order_of_chars = []
+    for char in str1:
+        if char not in char_freq:
+            char_freq[char] = 1
+            order_of_chars.append(char)
         else:
-            output[i] = 1
-        #str_count = str1.count(str1[0])
-        keys = output.values()
-    return keys
+            char_freq[char] += 1
+        #print(char_freq)
+    output_array = []
+
+    for char in order_of_chars:
+        output_array.append(char_freq[char])
+        #print(order_of_chars)
+    return output_array
 
 a = solve(str1)
 print(a)
