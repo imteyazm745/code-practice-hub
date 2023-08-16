@@ -46,11 +46,11 @@ Expected Space Complexity: O(1)"""
 # Solution
 def solve(n, arr, x, y):
     sum_range = 0
-    for i in range(x, y):
-        sum_range += arr[i}
+    for i in range(x, y+1):
+        sum_range += arr[i]
         
-    count = arr[y] - arr[x] + 1 
+    #print(sum_range) to check the calculation of sum
+    count = y - x +1
+    #print(count) to check the calculation of count
     average = sum_range / count
     return average
-        
-    # CODE HERE
