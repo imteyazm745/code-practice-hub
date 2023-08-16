@@ -22,3 +22,20 @@ Constraints
 String contains lowercase letters
 Expected Time Complexity: O(n)
 Expected Space Complexity: O(1) """
+
+str1 = "arfardarb"
+
+def solve(str1):
+    output = {}
+    #print(len(str1))
+    for i in str1:
+        if i in output:
+            output[i]+= 1
+        else:
+            output[i] = 1
+        #str_count = str1.count(str1[0])
+        keys = output.values()
+    return keys
+
+a = solve(str1)
+print(a)
