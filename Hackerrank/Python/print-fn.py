@@ -9,5 +9,5 @@ if __name__ == '__main__':
     n = int(input())
     i = 1
     while i <= n:
-        print(i, end ="")
+        print(i, end ="") # To Print the number followed by a space [end =" "]
         i+=1
