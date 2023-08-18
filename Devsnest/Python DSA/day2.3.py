@@ -29,3 +29,18 @@ Constraints
 Expected Time Complexity: O(n)
 Expected Space Complexity: O(n)"""
 
+def generate_palindromic_strings(n):
+    for i in range(1, n + 1):
+        # Generate the palindromic string
+        palindromic_string = ""
+        for j in range(1, i + 1):
+            palindromic_string += str(j)
+        for j in range(i - 1, 0, -1):
+            palindromic_string += str(j)
+        
+        # Print the palindromic string
+        print(palindromic_string)
+
+# Example usage
+n = int(input())
+generate_palindromic_strings(n)
