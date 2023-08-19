@@ -44,3 +44,6 @@ def generate_palindromic_strings(n):
 # Example usage
 n = int(input())
 generate_palindromic_strings(n)
+
+
+# Another solution
