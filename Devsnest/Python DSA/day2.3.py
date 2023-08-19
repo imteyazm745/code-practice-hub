@@ -29,6 +29,7 @@ Constraints
 Expected Time Complexity: O(n)
 Expected Space Complexity: O(n)"""
 
+"""
 def generate_palindromic_strings(n):
     for i in range(1, n + 1):
         # Generate the palindromic string
@@ -43,7 +44,21 @@ def generate_palindromic_strings(n):
 
 # Example usage
 n = int(input())
-generate_palindromic_strings(n)
+generate_palindromic_strings(n)"""
 
 
 # Another solution
+def generate_palindromic_strings(n):
+    for i in range(1, n + 1):
+        palindromic_string = ""
+        for j in range(1, 2 * i):
+            if j <= i:
+                palindromic_string += str(j)
+            else:
+                palindromic_string += str(2 * i - j)
+        
+        print(palindromic_string)
+
+# Example usage
+n = int(input())
+generate_palindromic_strings(n)
