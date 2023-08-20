@@ -48,7 +48,7 @@ n = int(input())
 generate_palindromic_strings(n)"""
 
 
-# Solution 2:
+# Another Method::
 def generate_palindromic_strings(n):
     for i in range(1, n + 1):
         palindromic_string = ""
