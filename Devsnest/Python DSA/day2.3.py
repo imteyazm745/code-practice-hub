@@ -17,6 +17,7 @@ Output:
     123454321
 Explanation:
     The size of staircase is 5. So you have to generate string of integers in such a way that it is palindromic. 
+
 Example 2:
 Input:
     3
