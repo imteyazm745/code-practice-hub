@@ -65,3 +65,4 @@ def generate_palindromic_strings(n):
 n = int(input())
 generate_palindromic_strings(n)
 
+# new method 
